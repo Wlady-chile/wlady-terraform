@@ -13,7 +13,7 @@ provider "google" {
 #}
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "wladimir-instance-new"
+  name         = "wladimir-instance"
   machine_type = var.machine_types[var.environment]
   tags         = ["web", "dev"]
 
