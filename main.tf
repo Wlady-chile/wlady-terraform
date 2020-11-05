@@ -13,7 +13,7 @@ provider "google" {
 #}
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "wladimir-instance"
+  name         = "wladimir-instance-new"
   machine_type = var.machine_types[var.environment]
   tags         = ["web", "dev"]
 
@@ -52,7 +52,7 @@ resource "google_compute_instance" "another_instance" {
   # storage bucket has been created.
   depends_on = [google_storage_bucket.example_bucket]
 
-  name         = "wladimir-instance-2"
+  name         = "wladimir-instance-2-new"
   machine_type = var.machine_types[var.environment]
 
   boot_disk {
