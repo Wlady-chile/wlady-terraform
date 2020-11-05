@@ -1,6 +1,7 @@
 provider "google" {
   version = "3.5.0"
-
+  
+  credentials = var.GOOGLE_CREDENTIALS 
   project = var.project
   region  = var.region
   zone    = var.zone
