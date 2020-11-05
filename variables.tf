@@ -1,3 +1,5 @@
+variable GOOGLE_CREDENTIALS {}
+
 variable "project" {
   type = string
   default = "playground-294418"
