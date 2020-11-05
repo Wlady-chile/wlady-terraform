@@ -1,10 +1,6 @@
 provider "google" {
   version = "3.5.0"
 
-  #credentials = file("playground-294418-cuenta-Cristian.json")
-  credentials = file(var.credentials_file)
-
-  #project = "playground-294418"
   project = var.project
   region  = var.region
   zone    = var.zone
@@ -70,4 +66,3 @@ resource "google_compute_instance" "another_instance" {
     }
   }
 }
-
