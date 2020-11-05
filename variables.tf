@@ -1,8 +1,7 @@
 variable "project" {
   type = string
+  default = "playground-294418"
 }
-
-variable "credentials_file" {}
 
 variable "region" {
   default = "us-central1"
