@@ -1,5 +1,3 @@
-variable "GOOGLE_GREDENTIAL" {}
-
 variable "project" {
   type = string
   default = "playground-294418"
